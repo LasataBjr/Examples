@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>popup</title>
+	<style>
+		#popup{
+				display: none;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width: 700px;
+				border: 1px solid black;
+				border-radius: 5px;
+				max-width: 80%;
+				z-index: 10;
+				background-color: #C19A6B;
+
+		}
+		.head{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 15px ;
+		}
+		.head h2{
+			font-size: 2em;
+			font-weight: bold;
+		}
+		.close{
+			font-size: 1.5em;
+			font-weight: bold;
+			outline: none;
+			background: none;
+			border: none;
+		}
+		.content{
+			padding: 10px 15px;
+		}
+
+		
+
+	</style>
+</head>
+<body>
+	<button onclick="openPopup()">Open popup</button>
+	<div id="popup">
+					<div class="head">
+					<h2 align="center">More Info</h2>
+					<button class="close" onclick="closeup()">&times;</button>
+					</div>
+					<div class="content">
+					<p>Track jaguars in Brazil's Pantanal. Stand in awe of the glaciers and granite spires of Patagonia. Ponder myth and mystery among the ruins of Machu Picchu. Look for rain forest wildlife from a dugout canoe in the Amazon Basin. Snorkel with sea lions and meet blue-footed boobies in the Galapagos Islands. South America's natural wonders are second to none, and our trips offer an intimate perspective on these destinations, meticulously designed for small groups of nature enthusiasts.</p>
+					</div>
+	</div>
+		<script>
+		function openPopup(){
+			document.getElementById("popup").style.display="block";
+
+		}
+		function closeup(){
+			document.getElementById("popup").style.display="none";
+		}
+	</script>
+
+</body>
+</html>

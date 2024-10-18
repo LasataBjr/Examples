@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Page</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script>
+		
+		function openup() 
+		{
+  			document.getElementById("popup").style.display = "block";
+		}
+
+		function closeup() 
+		{
+  			document.getElementById("popup").style.display = "none";
+		}
+	</script>
+	
+
+
+</head>
+<body>
+	<header id="head">
+		<a href="#"><img src="assets/images/wild.png" alt=""></a>
+		<nav>
+			<ul id="navbar">
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Sign Up</a></li>
+			</ul>
+		</nav>
+	</header>
+
+		<h1 align="center">Would you like to venture beyond the beaten path?</h1>
+
+		<div id="img">
+			<img src="assets/images/wildlife.jpg" alt="Wildlife img" width="100%">
+		</div>
+
+		<div id="row">
+			<div class="col">
+				<h3 align="center">Southern Africa Safaris</h3>
+				<p>From the golden dunes of the Namib Desert to the emerald waterways of the Okavango Delta, Southern Africa is a study in contrasts—and home to some of the largest wildlife populations on the continent. Botswana’s elephants are legendary, more than 100,000 strong, protected in some of the Africa’s most successful conservation areas. Beyond the Okavango's lush reaches, the Kalahari Desert sprawls, home to the famous black-maned lions and millennia-old San Bushmen culture.</p>
+			</div>
+			<div class="col">
+				<h3  align="center">South America Adventures</h3>	
+				<p >Track jaguars in Brazil's Pantanal. Stand in awe of the glaciers and granite spires of Patagonia. Ponder myth and mystery among the ruins of Machu Picchu.</p>
+				<button id="show" name="show" onclick="openup()">Show More</button>
+				<div id="popup">
+					<div class="popup-content">
+					<h2 align="center">More Info</h2>
+					<button class="close" onclick="closeup()">&times;</button>
+					<p>Track jaguars in Brazil's Pantanal. Stand in awe of the glaciers and granite spires of Patagonia. Ponder myth and mystery among the ruins of Machu Picchu. Look for rain forest wildlife from a dugout canoe in the Amazon Basin. Snorkel with sea lions and meet blue-footed boobies in the Galapagos Islands. South America's natural wonders are second to none, and our trips offer an intimate perspective on these destinations, meticulously designed for small groups of nature enthusiasts.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<h3  align="center">Asia & Pacifics Adventures</h3>	
+				<p id="par">For millennia, the treasures of Asia and the South Pacific have beckoned explorers—and our diverse adventures bring you close to some of the world’s most amazing natural wonders: photograph India’s wild tigers and track rhinos in Nepal. Search for orangutans in the rain forests of Borneo. Get close to cuddly pandas in China. Scout for kiwis and penguins in New Zealand. With our expert naturalists, explore remote wildlife reserves and national parks where other travelers are few.</p>
+			</div>
+		</div>
+
+	<footer id="foot">
+		<div class="f2 fol">
+			<a href="#"><img src="assets/images/wild.png" class="logo" alt="logo" ></a>
+			<div class="follow">
+				<h2 align="center">Follow Us</h2>
+				<div class="icon">
+					<a href="#"> <img src="assets/images/fb.png"></a>
+					<a href="#"> <img src="assets/images/ig.png"></a>
+					<a  href="#"> <img src="assets/images/yt.png"></a>
+		    	</div>
+		    </div>
+	    </div>
+		<div class="f2 res" id="f">
+			<h2>Traveler Resources</h2>
+			<a href="#">Blog</a>
+			<a href="#">Plan Your Trip</a>
+			<a href="#">The Habitat Club</a>
+			<a href="#">Important Legal Information</a>
+			<a href="#">Travel Advisor</a>
+			<a href="#">Sidemap</a>
+			<a href="#">Know Before You Go</a>
+		</div>
+		<div class="f2 ic">			
+			<div id="info">
+				<h2 align="center">Contact</h2>
+				<h3>800-543-8911</h3>  <h3>303-449-3711</h3><br>
+				<h4>U.S. & Canada</h4>   <h4>International</h4>
+			</div>
+		</div>
+		<div class=" copy">
+		<p>Copyright © 2023 • Natural Habitat Adventures</p>
+		</div>	
+	</footer>
+	
+	
+</body>
+</html>

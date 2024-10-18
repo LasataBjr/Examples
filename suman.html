@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>box</title>
+</head>
+<body>
+<div class="abc">
+<div class="red"></div>
+<div class="yellow"></div>
+<div class="green"></div>
+</div>
+</div>
+</body>
+<style>
+.abc{
+margin: auto;
+display:flex;
+border:2px solid black;
+height:400px;
+width:150px;
+background-color:black;
+flex-direction:column;
+padding:5%;
+gap:40px;
+}
+.red{
+height:150px;
+width:140px;
+border-radius:65%;
+background-color:red;
+animation:redlight 20s infinite;
+position:relative;
+}
+.yellow{
+height:150px;
+width:140px;
+border-radius:65%;
+background-color:#b1b14f;
+animation:yellowlight 20s infinite;
+position:relative;
+}
+.green{
+height:150px;
+width:140px;
+border-radius:65%;
+background-color:#5da95d;
+animation:greenlight 20s infinite;
+position:relative;
+}
+@keyframes redlight{
+33%{
+background-color:#ff0000;
+}
+75%{
+background-color:#c94940;
+}
+100%{
+background-color:#c94940;
+}
+}
+@keyframes yellowlight{
+33%{
+background-color:#b1b14f;
+}
+75%{
+background-color:#ffff00;
+}
+100%{
+background-color:#b1b14f;
+}
+}
+@keyframes greenlight{
+33%{
+background-color:#5da95d;
+}
+75%{
+background-color:#5da95d;
+}
+100%{
+background-color:#06f306;
+}
+}
+</style>
+
+ 
+</html>

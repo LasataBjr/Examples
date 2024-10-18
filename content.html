@@ -1,0 +1,128 @@
+<html>
+<head>
+	<style>
+		body{
+	counter-reset:ch;
+}
+h1{
+	counter-reset:sh;
+	counter-increment:ch;
+}
+h1:before
+{
+	content: counter(ch) ".";
+}
+h2{
+	counter-reset : ssh;
+	counter-increment : sh;
+}
+h2:before{
+	content: counter(ch) "." counter(sh);
+}
+h3{
+	counter-increment : ssh;
+}
+h3:before{
+	content: counter(ch) "." counter(sh) "." counter(ssh); 
+}
+	</style>
+	
+</head>
+
+<body>
+<h1>Computer</h1>
+ <h2>input</h2>
+ <h2>Output</h2>
+ <h2>Software</h2>
+  <h3>utility</h3>
+  <h3>application</h3>
+  <h3>system</h3>
+<h1>Fruits</h1>
+ <h2>apple</h2>
+ <h2>Mango</h2>
+  <h3>bombay</h3>
+  <h3>malda</h3>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Box Model</title>
+		<style>
+			body{
+				background-color:red;
+			}
+			div{
+				border-style:ridge;
+				box-shadow:#00dd99 0px 0px 10px ;
+				border-width:2px;
+				border-color:#444444;
+				width:50px;
+				padding-bottom:5px;
+				border-style: groove;
+			}
+			span{
+				border-left-style:double;
+				border-right-style:ridge;
+				border-width:2px;
+				border-right-color:#00dd88;
+				border-left-color:#0088dd;
+				width:200px;
+				height:30px;
+			}
+			
+		</style>
+	</head>	
+	<body>
+		<div>One</div>
+		<span>Two</span>
+		
+	</body>
+ </html>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Box Model</title>
+		<style>
+			#one{
+				width:20%;
+				
+				
+				background-color:green;
+			}
+			#two{
+				width:50%;
+				
+				
+				background-color:red;
+			}#three{
+				width:30%;
+			
+				
+				background-color:blue;
+			}
+			#container{
+				display:flex;
+				background-color:pink;
+				height:400px;
+			}
+			.hf{
+				background-color:#88dd33;
+				padding:40px 30px;
+			}
+		</style>
+	</head>	
+	<body>
+		<div class="hf">Header</div>
+		<div id="container">
+			<div id="one">Ram</div>
+			<div id="two">Hari Prasad</div>
+			<div id="three">Shyam</div>
+		</div>
+		<div class="hf">Footer</div>
+	</body>
+ </html>

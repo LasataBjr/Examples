@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<title>JavaScript</title>
+		<style>
+			div{
+				background-color: lightgrey;
+				width: 500px;
+				border: 5px solid green;
+ 				padding: 50px;
+  				margin: auto;
+  				}
+			#output{
+				margin: auto;
+  				display: block;
+  				text-align: center;
+			}
+			input[type="button"]
+			{
+				
+				margin right: 30px;
+				align-items: center;
+				width:50px;
+			}
+		</style>
+		<script>
+			function fun()
+			{
+				var a= parseInt(document.getElementById("t1").value);
+  				var b= parseInt(document.getElementById("t2").value);
+  				var sum = a + b;  				 				  				
+  				document.getElementById("output").value = sum;  				 				
+  			}
+  			function fun1()
+  			{
+  				var a= parseInt(document.getElementById("t1").value);
+  				var b= parseInt(document.getElementById("t2").value);
+  				var sub = a - b;
+  				document.getElementById("output").value = sub;
+  			}
+  			function fun2()
+  			{
+  				var a= parseInt(document.getElementById("t1").value);
+  				var b= parseInt(document.getElementById("t2").value);
+  				var mul = a * b;
+  				document.getElementById("output").value = mul;
+  			}
+  			function fun3()
+  			{
+  				var a= parseInt(document.getElementById("t1").value);
+  				var b= parseInt(document.getElementById("t2").value);
+  				var div = a / b;
+  				document.getElementById("output").value= div;
+  			}
+
+		</script>
+	</head>
+	<body>
+		<div>
+		<input type="box" id="output" name="output" placeholder="Display"> <br><br>
+		value 1: <input  id="t1" name="txt1">		   value 2: <input  id="t2" name="txt2"><br><br>
+		<input type="button" id="b1" name="b1" onclick="fun()" value="add">
+		<input type="button" id="b2" name="b2" onclick="fun1()" value="sub">
+		<input type="button" id="b3" name="b3" onclick="fun2()" value="mul">  
+		<input type="button" id="b4" name="b4" onclick="fun3()" value="div"> 
+		</div>
+	</body>
+</html>

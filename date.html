@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Date Object</title>
+
+	</head>
+	<body>
+		
+			<!--var d = new Date("08/14/2004");    
+    		var mon_diff=Date.now()-d.getTime();        
+    		var a = new Date(mon_diff);         
+       		var year = a.getUTCFullYear();      
+   			var age = Math.abs(year - 1970);       
+      		document.write("Age of the date entered: " + year + " years");
+
+
+			/*a = document.getElementById("dob").value;
+			b = new Date();
+			c = b-a;
+			year = 365*24*60*60*1000;
+			ageyear = Math.floor(c/year);
+			month = ((c/year)-ageyear)*12;
+			agemonth = Math.floor(month);
+			days = ((month-agemonth)*30);
+			agedays = Math.floor(days);
+			document.write("Age of the date entered: " + ageyear +"years"+ agemonth +"month"+ agedays +"days");-->
+
+		
+		<input type="date" name="dob" id='dob'/>
+ 		<input type="button" name="btnClick" value="Show Age" onclick="calculateAge(document.getElementById('dob').value)"/>
+  		<p id="demo"> </p>
+ 	 	<script>
+
+  		function calculateAge(dob)
+  		{
+  		today = new Date();
+    	d = new Date(dob);
+    	diff = today-d;
+	    year = diff/(1000*60*60*24*365);
+	    mon = 12*(year - Math.floor(year));
+	    day = 30 *(mon - Math.floor(mon));
+    	document.write("My age is: "+Math.trunc(year)+" years " + Math.trunc(mon) + " months "+Math.trunc(day)+" days");
+    	alert("I'm"+Math.trunc(year)+"years old");
+    	
+ 		}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sorting String</title>
+	<script>
+		function check()
+		{
+		items = document.getElementsByClassName("I");
+		len = items.length;
+		arr = [];
+		for(i=0; i < len; i++){
+			arr[i] = items[i].innerHTML;
+		}
+		arr.sort();		
+		arr.reverse();
+		str = '';
+		for(i=0; i < len; i++){
+	 		str += "<tr><td>"+arr[i]+"</td></tr>";
+	 	}
+		document.write("<table border='1'>"+str+"</table>");
+				
+		}
+		
+	</script>
+</head>
+<body>
+	<p class="I">Hello me</p>
+	<p class="I">Cat meow</p>
+	<p class="I">Student id</p>
+	<br><br>
+
+	<h2 class="I">Girl</h2>
+	<h2 class="I">Nineteen</h2>
+	<h2 class="I">KCMIT</h2>
+	<h2 class="I">Intelligent</h2>
+	<br><br>
+
+	<ul>
+		<li class="I">Patan</li>
+		<li class="I">Glasses</li>
+		<li class="I">Bag</li>
+		<li class="I">Virgo</li>
+		<li class="I">Web</li>
+	</ul>
+	
+	<input type="button" id="btnclick" name="btnclick" onclick="check()" value="Click"/>
+	
+</body>
+</html>

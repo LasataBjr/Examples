@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Enlarge</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/web1.css">
+	<script>
+		function openPopup(){
+			document.getElementById("popup").style.display="block";
+
+		}
+		function closePopup(){
+			document.getElementById("popup").style.display="none";
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<header id="head">
+		<label class="logo">DESIGN</label>
+		<nav>
+			<ul id="navbar">
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Sign Up</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<p id="title" align="center">Cool Design Images</p><br>
+	<div class="image">
+		<img src="assets/images/lvl.png"/>
+	</div>
+	<div class="image">
+		<img src="assets/images/cool.jpg"/>
+	</div>
+	<div class="image">
+		<img src="assets/images/bear.jpeg"/>
+	</div>
+	<button onclick="openPopup()">Open Popup</button>
+	</div>
+	<div id="popup">
+		<div class="popup-content">
+			<span class="close" onclick="closePopup()">X</span>
+			<h2>Popup Title</h2>
+			<p>Just a demo of popup</p>
+		</div>
+	</div>
+	<footer>
+		<div id="tf">
+		<div id="fcontainer">
+			<a href="#"><img src="assets/images/instagram.png" /></a>
+			<a href="#"><img src="assets/images/facebook.png" /></a>
+			<a href="#"><img src="assets/images/youtube.png" /></a>
+			<a href="#"><img src="assets/images/twitter.jpg" /></a>
+		</div>
+		<div id=" footnavbar">
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Sign Up</a></li>
+			</ul>
+		</div>
+		<div id="bottom">
+			<p>Copyright @2023-Designed By Lasata</p>
+			
+		</div>
+	</div>
+	</footer>
+
+</body>
+</html>

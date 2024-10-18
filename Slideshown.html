@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+	<title></title>
+</head>
+<body>
+	<div id="image">
+		<a href="#"><img src="assets/images/FairyTail.png"/></a>
+		<a href="#"><img src="assets/images/Megumi.jpg"/></a>
+		<a href="#"><img src="assets/images/Sakuta.jpg"/></a>
+		<a href="#"><img src="assets/images/SwordArt.jpg"/></a>
+	</div>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery-slideshow.js"></script>
+<script>
+	$('#image').slideShowAd({
+		interval: '3000',
+		slideShowType : 'slideLeft', //flipY slideLeft fade
+		duration: 4000
+	});
+</script>
+</body>
+</html>
